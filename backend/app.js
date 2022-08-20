@@ -33,6 +33,9 @@ app.use(cors());
 //public routing
 app.use("/admin", admin);
 app.use("/users", usersRouter);
+app.get("/", (req, res) => {
+  res.send("hello world");
+});
 
 //private routing
 app.use("/issues", issues);
