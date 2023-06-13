@@ -1,4 +1,4 @@
-var issuesModel = require("../schema/issueSchema.js");
+let issuesModel = require("../schema/issueSchema.js");
 
 class issueAPI {
   static getIssueByUser({ eMail, skip, limit }) {
